@@ -1,0 +1,595 @@
+.general {
+    padding: 80px 0;
+
+    &__breadcrumbs {
+        padding-bottom: 50px;
+
+        a {
+            font-family: 'Jost', serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+
+            color: #B8B2A8;
+        }
+    }
+
+    &__about {
+        &-title {
+            padding-bottom: 80px;
+            font-family: 'Forum', cursive;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 64px;
+            line-height: 100%;
+            color: #423E37;
+        }
+
+        &-content {
+            display: flex;
+
+            .image {
+                width: 50%;
+                margin-right: 80px;
+            }
+
+            .description {
+                width: 50%;
+                font-family: 'Jost', serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 29px;
+                color: #746F66;
+            }
+        }
+    }
+    &__unique {
+        background: url("/images/services/decor/harmony_bg.png");
+        display: flex;
+        margin-top: 130px;
+        padding: 130px 145px 130px 150px;
+        &-description {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding-right: 85px;
+            .title {
+                padding-bottom: 80px;
+                font-family: 'Forum', cursive;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 64px;
+                line-height: 100%;
+                color: #FFFFFF;
+            }
+            .about {
+                font-family: 'Jost', serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 29px;
+                color: #F1F1F1;
+            }
+        }
+        &-image {
+            width: 50%;
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        padding: 130px 0 80px 0;
+
+        &-title {
+            width: 46%;
+            margin-right: 80px;
+            font-family: 'Forum', cursive;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 64px;
+            line-height: 100%;
+            color: #423E37;
+        }
+
+        &-subtitle {
+            width: 50%;
+            font-family: 'Jost', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 120%;
+            color: #474541;
+        }
+    }
+
+    &__steps {
+        max-width: 1210px;
+
+        &-item {
+            padding-bottom: 30px;
+            display: flex;
+            align-items: center;
+
+            .step {
+                width: 100px;
+                margin-right: 40px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid #CFCFCF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .second {
+                    width: 78px;
+                    height: 78px;
+                    border-radius: 50%;
+                    border: 1px solid #CFCFCF;
+                    background-color: #F8F8F8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Forum', cursive;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 48px;
+                    line-height: 100%;
+                    color: #B7B7B7;
+                }
+            }
+
+            .text {
+                max-width: 1070px;
+                font-family: 'Jost', serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                color: #746F66;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+
+        &-about {
+            font-family: 'Jost', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #746F66;
+            display: flex;
+            padding-bottom: 15px;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1441px) {
+    .general {
+        .container {
+            margin: 0 auto;
+            padding: 0 110px;
+            max-width: 100%;
+        }
+
+        &__about {
+            &-title {
+                font-size: 56px;
+            }
+
+            &-content {
+                .description {
+                    font-size: 18px;
+                    line-height: 26px;
+                    padding: 0;
+                }
+            }
+        }
+
+        &__header {
+            &-title {
+                font-size: 56px;
+            }
+
+            &-subtitle {
+                font-size: 25px;
+            }
+        }
+
+        &__steps {
+            &-item {
+                .step {
+                    min-width: 100px;
+                }
+
+                .text {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__unique {
+            &-description {
+                .title {
+                    font-size: 56px;
+                    line-height: 100%;
+                }
+                .about {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .general {
+        .container {
+            max-width: 100%;
+            padding: 0 80px;
+        }
+
+        &__about {
+            &-title {
+                font-size: 48px;
+            }
+
+            &-content {
+                .description {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+            }
+        }
+
+        &__header {
+            flex-direction: column;
+
+            &-title {
+                width: 100%;
+                margin-right: 0;
+                font-size: 48px;
+                line-height: 100%;
+            }
+
+            &-subtitle {
+                width: 100%;
+                font-size: 20px;
+                line-height: 20px;
+                margin-top: 40px;
+            }
+        }
+
+        &__steps {
+            &-item {
+                .step {
+                    min-width: 100px;
+                }
+
+                .text {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__unique {
+            display: flex;
+            margin-top: 130px;
+            padding: 100px 80px;
+            &-description {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                padding-right: 60px;
+                .title {
+                    font-size: 48px;
+                    line-height: 100%;
+                    padding-bottom: 60px;
+                }
+                .about {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+            }
+            &-image {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .general {
+        .container {
+            max-width: 100%;
+            padding: 0 60px;
+        }
+
+        &__breadcrumbs {
+            a {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+
+        &__about {
+            &-title {
+                font-size: 36px;
+                line-height: 100%;
+                padding-bottom: 60px;
+            }
+
+            &-content {
+                .image {
+                }
+
+                .description {
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+            }
+        }
+
+        &__header {
+            flex-direction: column;
+
+            &-title {
+                width: 100%;
+                margin-right: 0;
+                font-size: 36px;
+            }
+
+            &-subtitle {
+                width: 100%;
+                font-size: 18px;
+                margin-top: 40px;
+            }
+        }
+
+        &__steps {
+            &-item {
+                .step {
+                    min-width: 100px;
+                }
+
+                .text {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__link {
+            &-about {
+                font-size: 12px;
+            }
+        }
+        &__unique {
+            display: flex;
+            margin-top: 130px;
+            padding: 80px 0 80px 60px;
+            &-description {
+                .title {
+                    font-size: 36px;
+                    line-height: 100%;
+                }
+                .about {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            &-image {
+                width: 50%;
+            }
+        }
+    }
+    .line {
+        width: 161px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .general {
+        padding-top: 60px;
+        .container {
+            max-width: 100%;
+            padding: 0px;
+        }
+
+        &__breadcrumbs {
+            padding: 0 40px;
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        &__about {
+
+            &-title {
+                padding: 50px 40px 60px 40px;
+                font-size: 36px;
+            }
+
+            &-content {
+                flex-direction: column;
+
+                .image {
+                    width: 100%;
+
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+                .description {
+                    padding: 60px 40px 80px 40px;
+                    width: 100%;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__header {
+            padding: 0 40px 40px 40px;
+            flex-direction: column;
+
+            &-title {
+                width: 100%;
+                margin-right: 0;
+                font-size: 36px;
+            }
+
+            &-subtitle {
+                width: 100%;
+                font-size: 18px;
+                margin-top: 40px;
+            }
+        }
+
+        &__steps {
+            padding: 0 40px;
+
+            &-item {
+                .step {
+                    align-self: baseline;
+                    margin-right: 20px;
+                    height: 60px;
+                    min-width: 60px;
+                    width: auto;
+
+                    .second {
+                        width: 46px;
+                        height: 46px;
+                        font-size: 26px;
+                        line-height: 100%;
+                    }
+                }
+
+                .text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__unique {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 60px 0;
+            padding: 0;
+            &-description {
+                width: 100%;
+                padding: 60px 40px;
+            }
+            &-image {
+                height: 285px;
+                background-position: unset !important;
+                width: 100%;
+            }
+        }
+
+        &__link {
+            &-about {
+                font-size: 12px;
+            }
+        }
+    }
+    .line {
+        width: 161px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .general {
+        .container {
+            max-width: 100%;
+            padding: 0px;
+        }
+
+        &__breadcrumbs {
+            padding: 0 20px;
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        &__about {
+            widht: 100%;
+
+            &-title {
+                padding: 40px 20px 40px 20px;
+                font-size: 36px;
+            }
+
+            &-content {
+                flex-direction: column;
+
+                .image {
+                    margin-left: 0;
+                }
+
+                .description {
+                    padding: 40px 20px 60px 20px;
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__header {
+            padding: 0 20px 40px 20px;
+            flex-direction: column;
+
+            &-title {
+                width: 100%;
+                margin-right: 0;
+                font-size: 36px;
+            }
+
+            &-subtitle {
+                width: 100%;
+                font-size: 18px;
+                margin-top: 40px;
+            }
+        }
+
+        &__steps {
+            padding: 0 20px;
+        }
+        &__unique {
+            &-description {
+                width: 100%;
+                padding: 40px 20px;
+                .title {
+                    padding-bottom: 40px;
+                }
+            }
+            &-image {
+                height: 205px;
+            }
+        }
+        &__link {
+            &-about {
+                font-size: 12px;
+            }
+        }
+    }
+    .line {
+        width: 161px;
+    }
+}

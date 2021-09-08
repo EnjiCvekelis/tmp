@@ -1,0 +1,60 @@
+.politic {
+    padding: 80px 0;
+    p {
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+        color: #423E37;
+        padding: 0;
+        a {
+            font-family: 'Jost', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 32px;
+            text-decoration-line: underline;
+            color: #423E37;
+        }
+    }
+    h1 {
+        padding-bottom: 40px;
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 121%;
+        color: #423E37;
+    }
+    h3 {
+        padding-top: 40px;
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    &__title {
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120%;
+        text-align: center;
+    }
+    &__city {
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        color: #423E37;
+    }
+    &__item {
+        margin-bottom: 80px;
+    }
+}

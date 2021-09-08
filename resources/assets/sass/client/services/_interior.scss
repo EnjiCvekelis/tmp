@@ -1,0 +1,713 @@
+.interior {
+  padding: 80px 150px 0 150px;
+
+  &__breadcrumbs {
+    padding-bottom: 50px;
+
+    a {
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: #B8B2A8;
+    }
+  }
+
+  &__about {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+
+    &-title {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      padding-bottom: 80px;
+      font-family: 'Forum', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 100%;
+      color: #423E37;
+    }
+
+    &-content {
+      display: flex;
+
+      .image {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-right: 80px;
+      }
+
+      .description {
+        flex: 1 1 100%;
+        font-family: 'Jost', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 29px;
+        color: #746F66;
+      }
+    }
+  }
+}
+
+.art {
+  padding: 0 80px;
+  display: flex;
+  margin-left: auto;
+  margin-top: 130px;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__about {
+    margin-right: 80px;
+    min-width: 800px;
+    max-width: 800px;
+
+    &-title {
+      font-family: 'Forum', cursive;
+      padding-bottom: 80px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 100%;
+      color: #423E37;
+    }
+
+    &-description {
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px;
+      color: #746F66;
+    }
+  }
+
+  &__image {
+    width: fit-content;
+  }
+}
+
+.decoration {
+  margin-top: 130px;
+  display: flex;
+  padding: 0 150px;
+
+  &__image {
+    width: 50%;
+    background: url("/images/services/interior/decor.png") no-repeat;
+    margin-right: 80px;
+  }
+
+  &__content {
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    &-title {
+      width: 100%;
+      padding-bottom: 80px;
+      font-family: 'Forum', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 100%;
+      color: #423E37;
+    }
+
+    &-description {
+      width: 100%;
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px;
+      color: #746F66;
+    }
+  }
+}
+
+.sign {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 130px;
+  margin-left: auto;
+  padding-right: 80px;
+
+  &__about {
+    margin: 60px 80px 60px 0;
+    max-width: 800px;
+
+    &-title {
+      font-family: 'Forum', cursive;
+      width: 100%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 100%;
+      color: #423E37;
+    }
+
+    &-description {
+      margin-top: 80px;
+      font-family: 'Jost', serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px;
+      color: #746F66;
+    }
+  }
+
+  &__image {
+    background: url("/images/services/interior/sign.png") no-repeat center;
+    background-size: cover;
+    width: 390px;
+    min-width: 300px;
+  }
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: 80px;
+
+  &__about {
+    font-family: 'Jost', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #746F66;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .interior {
+    padding: 80px 80px;
+
+    &__about {
+      &-title {
+        font-size: 54px;
+        line-height: 100%;
+      }
+
+      &-content {
+        .description {
+          flex: 1 1 100%;
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .art {
+    margin-left: auto;
+
+    &__about {
+      max-width: 700px;
+      min-width: 700px;
+
+      &-title {
+        font-size: 56px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+  .decoration {
+    margin-top: 130px;
+    display: flex;
+    padding: 0 80px;
+
+    &__image {
+      width: 50%;
+    }
+
+    &__content {
+      padding: 30px 0 30px 0;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      &-title {
+        padding-bottom: 70px;
+        font-size: 56px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+  .sign {
+    display: flex;
+    margin-top: 130px;
+
+    margin-left: 80px;
+
+    &__about {
+      max-width: 700px;
+
+      &-title {
+        font-size: 56px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+  .link {
+    margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .interior {
+    padding: 80px 80px 0 80px;
+
+    &__about {
+
+      &-title {
+        padding-bottom: 60px;
+        font-size: 48px;
+        line-height: 100%;
+      }
+
+      &-content {
+        .image {
+          flex: 1 1 100%;
+          width: 100%;
+          max-width: 362px;
+          background: url("/images/services/interior/interior_1024.png") no-repeat;
+          margin-right: 80px;
+        }
+
+        .description {
+          flex: 1 1 100%;
+          font-size: 16px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+  .art {
+    margin-top: 100px;
+    margin-left: 0;
+
+    &__about {
+      padding-right: 0;
+      max-width: 576px;
+      margin-right: 50px;
+      min-width: unset;
+
+      &-title {
+        padding-bottom: 60px;
+        font-size: 48px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      min-width: 228px;
+    }
+  }
+  .decoration {
+    margin-top: 130px;
+    display: flex;
+    padding: 0 80px;
+
+    &__image {
+      background: url("/images/services/interior/decor_1024.png") no-repeat;
+      width: 50%;
+      max-width: 362px;
+    }
+
+    &__content {
+      padding: 30px 0 30px 0;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      &-title {
+        padding-bottom: 60px;
+        font-size: 48px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+  }
+
+  .sign {
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-left: 80px;
+    max-width: unset;
+
+    &__about {
+      margin: 13px 80px 13px 0;
+      max-width: 422px;
+
+      &-title {
+        font-size: 48px;
+        line-height: 100%;
+      }
+
+      &-description {
+        margin-top: 60px;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interior {
+    padding: 80px 60px 0 0;
+
+    &__breadcrumbs {
+      padding-left: 60px;
+      a {
+        font-size: 12px;
+        line-height: 17.5px;
+      }
+    }
+
+    &__about {
+      &-title {
+        font-size: 36px;
+        line-height: 100%;
+        padding-left: 60px;
+      }
+
+      &-content {
+        .image {
+          flex: 1 1 100%;
+          width: 100%;
+          background: url("/images/services/interior/interior_1024.png") no-repeat;
+          margin-right: 80px;
+        }
+
+        .description {
+          flex: 1 1 100%;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .art {
+    margin-top: 100px;
+    margin-left: 0;
+    padding: 0 60px;
+
+    &__about {
+      &-title {
+        padding-bottom: 60px;
+        font-size: 36px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    &__image {
+      min-width: 192px;
+      width: 80%;
+    }
+  }
+  .decoration {
+    margin-top: 100px;
+    padding: 0 60px 0 0;
+
+    &__image {
+      background: url("/images/services/interior/decor_1024.png") no-repeat;
+      width: 50%;
+    }
+
+    &__content {
+      padding: 20px 0 20px 0;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      &-title {
+        padding-bottom: 60px;
+        font-size: 36px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .sign {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 0 0 60px;
+
+    &__about {
+
+      &-title {
+        font-size: 36px;
+      }
+    }
+  }
+  .link {
+    margin: 80px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .interior {
+    padding: 60px 0 0 0;
+
+    &__breadcrumbs {
+      padding: 0 40px 50px 40px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    &__about {
+      &-title {
+        width: 100%;
+        padding: 0 40px 60px 40px;
+        font-size: 36px;
+        line-height: 100%;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        .image {
+          min-width: 100%;
+          margin-right: 0;
+          min-height: 285px;
+        }
+
+        .description {
+          padding: 60px 40px 0 40px;
+        }
+      }
+    }
+  }
+  .art {
+    margin-top: 80px;
+    margin-left: 0;
+    padding: 0 40px;
+    display: grid;
+
+    &__about {
+      padding-right: 0;
+      padding-bottom: 0;
+
+      &-title {
+        width: 100%;
+        padding-bottom: 60px;
+        font-size: 36px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    &__image {
+     display: none;
+    }
+  }
+  .decoration {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+
+    &__image {
+      min-width: 100%;
+      min-height: 285px;
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+
+    &__content {
+      padding: 0 40px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &-title {
+        padding-bottom: 50px;
+        font-size: 36px;
+        line-height: 100%;
+      }
+
+      &-description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .sign {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 80px;
+    padding-left: 0;
+    max-width: none;
+
+    &__about {
+      margin: 0;
+      padding: 60px 40px 0 40px;
+      max-width: none;
+
+      &-title {
+        font-size: 36px;
+        line-height: 100%;
+      }
+
+      &-description {
+        margin-top: 60px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    &__image {
+      background: url("/images/services/interior/sign_480.png");
+      width: 100%;
+      height: 285px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .interior {
+    &__breadcrumbs {
+      padding: 0 20px 40px;
+    }
+    &__about {
+      &-title {
+        padding: 0 20px 40px;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        .image {
+          width: 100%;
+          background: url("/images/services/interior/interior.png") no-repeat center;
+          margin-right: 0;
+          min-height: 205px;
+        }
+
+        .description {
+          padding: 40px 20px 0 20px;
+        }
+      }
+    }
+  }
+  .art {
+    margin-top: 60px;
+    margin-left: 0;
+    padding: 0 20px;
+
+    &__about {
+      padding-right: 0;
+
+      &-title {
+        padding-bottom: 40px;
+      }
+    }
+  }
+  .decoration {
+    margin-top: 60px;
+
+    &__image {
+      background: url("/images/services/interior/decor.png") no-repeat center;
+      width: 100%;
+      min-height: 205px;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    &__content {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &-title {
+        padding-bottom: 40px;
+        font-size: 36px;
+        line-height: 100%;
+      }
+    }
+  }
+  .sign {
+    margin-top: 60px;
+    max-width: none;
+
+    &__about {
+      padding: 40px 20px 0 20px;
+      max-width: none;
+
+      &-description {
+        margin-top: 40px;
+      }
+    }
+
+    &__image {
+      background-position: right;
+      height: 205px;
+    }
+  }
+  .link {
+    margin: 60px 0;
+  }
+}

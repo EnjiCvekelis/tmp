@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#content {
+  margin-top: 85px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+    #content {
+        margin-top: 67px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #content {
+        margin-top: 58px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        margin-top: 54px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #content {
+        margin-top: 50px;
+    }
+}

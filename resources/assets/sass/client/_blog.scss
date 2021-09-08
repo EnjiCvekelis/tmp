@@ -1,0 +1,174 @@
+//#page-client\.blog {
+//    #content {
+//        background: url('/images/blog/blog-bg.png') center no-repeat;
+//        background-size: cover;
+//    }
+//}
+.blog {
+    padding: 80px 0 80px 0;
+    &__breadcrumbs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a {
+            font-family: 'Jost', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #B8B2A8;
+        }
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        font-family: 'Forum', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 100%;
+        text-align: center;
+        color: #423E37;
+    }
+
+    &__content {
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px 20px;
+        &-item {
+            .image {
+                padding-bottom: 30px;
+
+            }
+            .blog_description {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .title {
+                    font-family: 'Jost', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 30px;
+                    line-height: 120%;
+                    height: fit-content;
+                    color: #12110E;
+                    margin-bottom: 30px;
+                }
+
+                .description {
+                    font-family: 'Jost', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 29px;
+                    color: #746F66;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .blog {
+        &__title {
+            font-size: 56px;
+            line-height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blog {
+        &__title {
+            font-size: 48px;
+            line-height: 100%;
+        }
+        &__content {
+            .image {
+                padding-bottom: 20px;
+            }
+            .blog_description {
+                .title {
+                    font-size: 20px;
+                    line-height: 120%;
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog {
+        &__breadcrumbs {
+            a {
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__content {
+            padding-top: 60px;
+            .blog_description {
+                .title {
+                    font-size: 18px;
+                    line-height: 120%;
+                }
+
+                .description {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            &-item:first-child {
+                background-position: center;
+                width: 100%;
+                grid-column-start: 0;
+                grid-column-end: 0;
+                grid-row-start: 0;
+                grid-row-end: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .blog {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            &-item:first-child {
+                background-position: center;
+                width: 100%;
+                grid-column-start: 0;
+                grid-column-end: 0;
+                grid-row-start: 0;
+                grid-row-end: 0;
+            }
+        }
+    }
+}
